@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Suma de Anillos en Matriz</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td {
+            border: 1px solid #000;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+        .highlight {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Suma de elementos en un anillo de una matriz</h2>
+    <p>Introduce la dimensión de la matriz (n x n) y el anillo \( k \) a sumar.</p>
+    <label for="dimension">Dimensión de la matriz (n): </label>
+    <input type="number" id="dimension" min="2" value="6">
+    <br>
+    <label for="anillo">Anillo \( k \): </label>
+    <input type="number" id="anillo" min="0" value="0">
+    <br><br>
+    <button onclick="calcularAnillo()">Calcular Suma</button>
+    <h3>Resultado Total: <span id="resultado">-</span></h3>
+    <h4>Suma de los bordes:</h4>
+    <p id="numerosSumados">-</p>
+
+    <div id="matriz"></div>
+</body>
+</html>
