@@ -104,5 +104,5 @@ function sumarAnillo(matriz, n, k) {
 function formatSumaContinua(numeros, total) {
     if (numeros.length === 0) return "-";
     const sumaStr = numeros.join(" + ");
-    return `${sumaStr} = ${total}`; // Muestra los números sumados y el total al final
+    return `${sumaStr} = ${total}`;
 }
